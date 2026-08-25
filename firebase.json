@@ -1,0 +1,9 @@
+{
+  "hosting": {
+    "public": ".",
+    "ignore": ["firebase.json", "firestore.rules", "firestore.indexes.json", "**/.*", "**/node_modules/**", "README.md"],
+    "rewrites": [{ "source": "/login", "destination": "/index.html" }],
+    "headers": [{ "source": "**/*.@(js|css|svg)", "headers": [{ "key": "Cache-Control", "value": "max-age=3600" }] }]
+  },
+  "firestore": { "rules": "firestore.rules", "indexes": "firestore.indexes.json" }
+}
